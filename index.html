@@ -1,3 +1,104 @@
-<div>
-  Hello!
-</div>
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>데일리 뉴스 리포트</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f3f3;
+      color: #111;
+      font-family: Arial, sans-serif;
+    }
+    .page {
+      width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+    }
+    .title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      border-bottom: 4px solid #111;
+      padding-bottom: 16px;
+    }
+    .date {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .item {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .item-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .item-summary {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+    .item-link {
+      font-size: 13px;
+      color: #0b57d0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="title">데일리 뉴스 리포트</div>
+    <div class="date">2026. 4. 16. AM 8:06:11</div>
+
+    <div class="grid">
+      <section>
+        <div class="section-title">정치</div>
+        <article class="item">
+          <div class="item-title">정치 기사 제목</div>
+          <div class="item-summary">정치 기사 요약</div>
+          <a class="item-link" href="https://example.com" target="_blank">원문 보기</a>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-title">사회</div>
+        <article class="item">
+          <div class="item-title">사회 기사 제목</div>
+          <div class="item-summary">사회 기사 요약</div>
+          <a class="item-link" href="https://example.com" target="_blank">원문 보기</a>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-title">경제</div>
+        <article class="item">
+          <div class="item-title">경제 기사 제목</div>
+          <div class="item-summary">경제 기사 요약</div>
+          <a class="item-link" href="https://example.com" target="_blank">원문 보기</a>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
